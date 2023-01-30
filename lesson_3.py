@@ -89,17 +89,17 @@ while True:
 """6. Реализовать функцию int_func(), принимающую слова из маленьких латинских букв и возвращающую их же,
  но с прописной первой буквой. Например, print(int_func(‘text’)) -> Text."""
 
-def my_func(my_str):
+def int_func(my_str):
     my_str = my_str.capitalize()
     return my_str
 my_string=input("Введите слова из маленьких латинских букв: ")
-print(f"Слово с прописной буквы: {my_func(my_string)}")
+print(f"Слово с прописной буквы: {int_func(my_string)}")
 
 """7. Продолжить работу над заданием. В программу должна попадать строка из слов, разделённых пробелом.
  Каждое слово состоит из латинских букв в нижнем регистре. Нужно сделать вывод исходной строки,
  но каждое слово должно начинаться с заглавной буквы. Используйте написанную ранее функцию int_func()."""
 
-def my_func(my_str):
+def int_func(my_str):
     my_str = my_str.capitalize()
     return my_str
 
@@ -107,5 +107,5 @@ my_string=input("Введите слова через пробел: ")
 my_string = my_string.split()
 i=0
 while i<len(my_string):
-    print(my_func(my_string[i])," ",end="")
+    print(int_func(my_string[i])," ",end="")
     i+=1
